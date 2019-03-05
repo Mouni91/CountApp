@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.nrtec.mouni.countapp.MainActivity">
+
+    <Button
+        android:id="@+id/toast"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/colorPrimary"
+        android:text="Toast"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textcount"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="#eded12"
+        android:gravity="center"
+        android:text="0"
+
+        android:textColor="@color/colorPrimary"
+        android:textSize="175sp"
+
+        />
+
+    <Button
+        android:id="@+id/count"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/colorPrimary"
+        android:onClick="countinc"
+        android:text="Count"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/countdec"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/colorPrimary"
+        android:onClick="countdec"
+        android:text="Decrement"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/colorPrimary"
+        android:onClick="reset"
+        android:text="Reset"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
